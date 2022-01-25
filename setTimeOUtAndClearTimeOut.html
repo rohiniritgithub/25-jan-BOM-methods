@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="myp">
+		dfdfgdfgdf
+		dfgdfgdfg
+		dfgdfgdfg
+		dfgdfg
+		gdfgdfgdfgh
+		hjghjhgjghj
+		ghjhjdfgfghgh
+	</p>
+	<button type="button" id="mybtn">clear time</button>
+	<script type="text/javascript">
+		//set tim out method
+		function changeCSS(){
+
+			document.getElementById("myp").style='color:red';
+		}
+		setTimeout(changeCSS,5000);
+		setTimeout(function changeCSS() {
+			document.getElementById("myp").style='color:red';
+
+		},2000);
+
+		setTimeout(() => {
+			document.getElementById("myp").style='color:red';
+		},2000);
+
+
+
+		//all above are same
+
+		//clear tiomeout method
+		var timerId=setTimeout(() => {
+			document.getElementById("myp").style='color:red';
+
+		},5000);
+
+		function cleartime()
+		{
+			clearTimwout(timerId);
+		}
+		document.getElementById("mybtn").addEventListener("click",cleartime);
+		
+
+		
+	</script>
+
+</body>
+</html>
