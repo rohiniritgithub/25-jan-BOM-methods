@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<h1>Location object</h1>
-	<script type="text/javascript">
-		//you can set also and see in url
-		window.location.href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyCg0M0tTYDRgdGDwYsutzCspSgQAT1UGoA&q=myntra&oq=myntra&aqs=chrome.1.69i57j46i199i433i465i512j0i433i512l7.4647j0j7&sourceid=chrome&ie=UTF-8";
-		result=window.location.host;
-		result=window.location.hostname;
-		result=
-	</script>
+    <h1> Location object</h1>
+    <script>
+        var result;
+        //u can set also and see in URL
+       window.location.href = 'https://www.myntra.com/home-furnishing-menu?f=categories%3ABedsheets';
+    //         result = window.location.host;// it includes port if exists
+    //         result = window.location.hostname;
+    //         result = window.location.href;
+    //         result = window.location.pathname;
+    //         result = window.location.port;
+    //         result = window.location.protocol;//http://localhost/15.%20LocationProperties.html  
 
+             console.log(result);
+
+    //         window.location.reload();
+    //         window.location.assign('https://www.myntra.com/home-furnishing-menu?f=categories%3ABedsheets');
+    //         window.location.replace('https://www.google.com');
+    // </script>
 </body>
 </html>
