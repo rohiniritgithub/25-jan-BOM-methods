@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<p id="myp">
-		dfdfgdfgdf
-		dfgdfgdfg
-		dfgdfgdfg
-		dfgdfg
-		gdfgdfgdfgh
-		hjghjhgjghj
-		ghjhjdfgfghgh
-	</p>
-	<button type="button" id="mybtn">clear time</button>
-	<script type="text/javascript">
-		//set tim out method
-		function changeCSS(){
+    <p id="myp">bck mcndcy sc,dhcdshv bdv,msdh dbc,asMCVj dsmcNVHJC, jsZDVHj,
+	    jhgjfhgjf
+	    dfjkhkdjfghk
+	    jdfhkjdfh
+	    flkdfgjkldf
+	    dflkjdfgkjh</p>
+    <button type="button" id="mybtn">Clear Time</button>
+    <script>
+        //SetTimeOut Method
 
-			document.getElementById("myp").style='color:red';
-		}
-		setTimeout(changeCSS,5000);
-		setTimeout(function changeCSS() {
-			document.getElementById("myp").style='color:red';
+        //function changesCSS(){
+            //document.getElementById("myp").style= 'color:red';
+        //}
+        //setTimeout(function changeCSS, 5000);
+        setTimeout(function changeCSS(){
+            document.getElementById("myp").style = 'color:red';
+        }, 2000);
 
-		},2000);
+        setTimeout(function (){
+            document.getElementById("myp").style = 'color: red';
+        }, 2000);
 
-		setTimeout(() => {
-			document.getElementById("myp").style='color:red';
-		},2000);
+        setTimeout(() => {
+            document.getElementById("myp").style = 'color: red';
+        }, 2000);
 
+        //all above are same 
+        //clear timeout method
 
+        var timerId = setTimeout(() => {
+            document.getElementById("myp").style = 'color:red';
+        }, 5000);
 
-		//all above are same
-
-		//clear tiomeout method
-		var timerId=setTimeout(() => {
-			document.getElementById("myp").style='color:red';
-
-		},5000);
-
-		function cleartime()
-		{
-			clearTimwout(timerId);
-		}
-		document.getElementById("mybtn").addEventListener("click",cleartime);
-		
-
-		
-	</script>
-
+        //function clrtime(){
+           // clearTimeout(timerId);
+        //}
+    </script>
 </body>
 </html>
