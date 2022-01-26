@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<div id="mydiv"></div>
-	<script type="text/javascript">
-		window.onload=function (){textContent="hello window";
-			
-		
-		}
+    <!-- <body onload="alert ('Hellow Window');"> -->
+        <div id="mydiv"></div>
+         <script>
+             window.onload = function(){
+                 document.getElementById("mydiv").textContent = "Hello Window";
+             }
 
-		function show() {
-			document.getElementById("mydiv").textContent="hello window";
-			// body...
-		}
-		window.addEventListener("load",show);
-	</script>
-
+            //  function show(){
+            //      document.getElementById("mydiv").textContent = "Hello Window";
+            //  }
+            //  window.addEventListener("load", show);
+         </script>
 </body>
 </html>
