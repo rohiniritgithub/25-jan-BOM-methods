@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<div id="mydiv"></div>
-	<button type="button" id="mybtn"> clear time</button>
-	<script type="text/javascript">
-		//setInetrval time
-		function runtext()
-		{
-			document.getElementById("mydiv").textContent=+"hello";
-		}
-		setInterval(runtext,1000);
+    <div id="mydiv"></div>
 
-		var setIntervalID=setInterval(() =>{
-			document.getElementById("mydiv").textContent+="hello";
+    <button type="button" id="mybtn">Clear Time</button>
+    <script>
+        //setInterval Method
+            // function runtext() {
+            //     document.getElementById("mydiv").textContent += "Hello";
+            // }
+            // setInterval(runtext, 1000);
 
-		},1000);
-		function clrtime() {
-			clearInetrval(intervalID);
-			// body...
-		}
-		document.getElementById("mybtn").addEventListener("click",clrtime);
-	</script>
+            var intervalID = setInterval(() =>{
+                document.getElementById("mydiv").textContent += "Hello"
+            }, 1000);
 
+            function clrtime(){
+                clearInterval(intervalID);
+            }
+
+            document.getElementById("mybtn").addEventListener("click", clrtime);
+    </script>
 </body>
 </html>
